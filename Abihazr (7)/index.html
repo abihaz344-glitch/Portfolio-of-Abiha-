@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Abiha Fatima — Aspiring Software Engineer | AI/ML Enthusiast | Web Developer. Portfolio showcasing skills, projects, and contact." />
+  <title>Abiha Fatima — Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+  <!-- SEO: Open Graph -->
+  <meta property="og:title" content="Abiha Fatima — Portfolio" />
+  <meta property="og:description" content="Aspiring Software Engineer | AI/ML Enthusiast | Web Developer" />
+  <meta property="og:type" content="website" />
+</head>
+<body>
+  <!-- Dynamic background canvas -->
+  <canvas id="bgCanvas" class="bg-canvas"></canvas>
+  <div class="overlay-rain" aria-hidden="true"></div>
+
+  <header class="container header">
+    <div class="header-bar">
+      <div class="brand" aria-label="Brand">
+        <span class="brand-bold">Port</span><span class="brand-accent">folio</span>
+      </div>
+      <nav class="tabs" role="navigation" aria-label="Main">
+        <button class="tab active" data-target="home">Home</button>
+        <button class="tab" data-target="contact">Contact</button>
+      </nav>
+      <div class="header-actions">
+        <a class="btn btn-primary" href="Abiha_Fatima_cv%20(3).pdf" download="Abiha_Fatima_CV.pdf" title="Download CV" onclick="downloadCV(event)">Download CV</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container main">
+    <section id="home" class="section active">
+      <div class="hero-wrap">
+        <div class="hero-left">
+          <div class="avatar-glow">
+            <img src="Abihaz.jpg.jpeg" alt="Portrait of Abiha Fatima" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1529139574466-a303027c1d8b?w=512&q=80&auto=format&fit=crop';">
+          </div>
+        </div>
+        <div class="hero-right card">
+          <p class="hello">Hello, I'm</p>
+          <h1 class="name">Abiha Fatima</h1>
+          <p class="typed-line">And I'm a <span id="typedRole" class="accent">Developer</span></p>
+          <p class="tagline">I build scalable web apps and data‑driven solutions using Java, Python, MySQL, HTML, CSS and JavaScript.</p>
+          <div class="contact-inline">
+            <strong>Email:</strong> <span>abihaz344@gmail.com</span>
+            <strong>Phone:</strong> <span>+91 9569519323</span>
+          </div>
+          <div class="social-row">
+            <a class="icon-btn" href="https://github.com/abihaz344-glitch" target="_blank" rel="noopener" aria-label="GitHub">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.57v-2.17c-3.34.73-4.04-1.61-4.04-1.61-.55-1.4-1.34-1.77-1.34-1.77-1.09-.74.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.84 2.8 1.31 3.48 1 .11-.78.42-1.31.77-1.61-2.66-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.31-.54-1.56.12-3.25 0 0 1.01-.32 3.3 1.23a11.46 11.46 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.69.25 2.94.12 3.25.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.62-5.49 5.92.43.38.82 1.12.82 2.26v3.35c0 .31.22.68.83.57A12 12 0 0 0 12 .5Z"/></svg>
+            </a>
+            <a class="icon-btn" href="https://www.linkedin.com/in/abiha-fatima-47385227b/" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5.001 2.5 2.5 0 0 1 0-5Zm.02 5.994H2V22h3V9.494ZM8 9.5h2.88v1.705h.04c.4-.76 1.38-1.56 2.84-1.56 3.04 0 3.6 2 3.6 4.6V22h-3v-6.04c0-1.44-.02-3.3-2.02-3.3-2.02 0-2.32 1.58-2.32 3.2V22H8V9.5Z"/></svg>
+            </a>
+            <a class="icon-btn" href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a class="icon-btn" href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+            <a class="icon-btn" href="https://pinterest.com" target="_blank" rel="noopener" aria-label="Pinterest">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.746-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24.009 12.017 24.009c6.624 0 11.99-5.367 11.99-11.988C24.007 5.367 18.641.001.012.001z"/></svg>
+            </a>
+          </div>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="#contact">Hire Me</a>
+            <a class="btn btn-outline" href="#contact">Contact Me</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="quick-links">
+        <a class="link-btn" href="#skills">Skills</a>
+        <a class="link-btn" href="#projects">Projects</a>
+        <a class="link-btn" href="#education">Education</a>
+        <a class="link-btn" href="#hobbies">Hobbies</a>
+      </div>
+
+      <div class="stats-row">
+        <div class="stat"><span class="num">10</span><span class="label">Years of experience</span></div>
+        <div class="stat"><span class="num">30</span><span class="label">Projects completed</span></div>
+        <div class="stat"><span class="num">9</span><span class="label">Technologies mastered</span></div>
+        <div class="stat"><span class="num">100+</span><span class="label">Satisfied clients</span></div>
+      </div>
+    </section>
+    
+
+    <section id="skills" class="section">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid">
+        <!-- Skill cards -->
+        <div class="skill">C</div>
+        <div class="skill">C++</div>
+        <div class="skill">Java</div>
+        <div class="skill">Python</div>
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">DSA (Java)</div>
+        <div class="skill">MySQL</div>
+        <div class="skill">GitHub</div>
+        <div class="skill">VS Code</div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid">
+        <article class="project-card" data-tilt>
+          <div class="project-icon">🤖</div>
+          <h3>ML Scanner</h3>
+          <p>Advanced machine learning scanner for image recognition, object detection, and data analysis with real-time processing capabilities.</p>
+          <div class="project-buttons">
+            <button class="btn btn-primary" onclick="openMLScanner()">Try Demo</button>
+            <a href="https://github.com/abihaz344-glitch/ml-scanner" class="btn btn-outline" target="_blank">View Code</a>
+          </div>
+        </article>
+        <article class="project-card" data-tilt>
+          <div class="project-icon">👆</div>
+          <h3>Fingerprint Scanner</h3>
+          <p>Biometric authentication system with fingerprint recognition, salary prediction algorithms, and secure data management.</p>
+          <div class="project-buttons">
+            <button class="btn btn-primary" onclick="openFingerprintScanner()">Try Demo</button>
+            <a href="https://github.com/abihaz344-glitch/fingerprint-scanner" class="btn btn-outline" target="_blank">View Code</a>
+          </div>
+        </article>
+        <article class="project-card" data-tilt>
+          <div class="project-icon">🐼</div>
+          <h3>Panda Form</h3>
+          <p>Interactive employee tracking web application with geolocation-based attendance, admin dashboard, and real-time analytics.</p>
+          <div class="project-buttons">
+            <button class="btn btn-primary" onclick="openPandaForm()">Try Demo</button>
+            <a href="https://github.com/abihaz344-glitch/interactive_panda-_form" class="btn btn-outline" target="_blank">View Code</a>
+          </div>
+        </article>
+        <article class="project-card" data-tilt>
+          <div class="project-icon">🎓</div>
+          <h3>Student Management System</h3>
+          <p>Comprehensive student tracking system with attendance management, grade tracking, and administrative controls.</p>
+          <div class="project-buttons">
+            <button class="btn btn-primary" onclick="openStudentSystem()">Try Demo</button>
+            <a href="#" class="btn btn-outline">View Code</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="education" class="section">
+      <h2 class="section-title">Education</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <h4>Masters</h4>
+          <span class="time">Amity University</span>
+          <p>CPI: 8.9</p>
+        </div>
+        <div class="timeline-item">
+           <h4>Bachelors</h4>
+          <span class="time">Lucknow University</span>
+          <p>CPI: 7.9</p>
+        </div>
+        <div class="timeline-item">
+          <h4>12th — </h4>
+          <span class="time">Emma Thompson School</span>
+          <p>67.23%</p>
+        </div>
+        <div class="timeline-item">
+          <h4>10th</h4>
+          <span class="time">Emma Thompson School</span>
+          <p>86%</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2 class="section-title">Contact</h2>
+      <div class="contact-grid">
+        <div class="card contact-card">
+          <p><strong>Email:</strong> <a href="mailto:abihaz344@gmail.com">abihaz344@gmail.com</a></p>
+          <p><strong>Phone:</strong> <a href="tel:+919569519323">+91 9569519323</a></p>
+        </div>
+
+        <form id="contactForm" class="card form-card" onsubmit="sendEmail(event)">
+          <input type="hidden" name="access_key" value="6fc6fb79-686c-4175-bcb4-74460f275c93" />
+          <input type="hidden" name="subject" value="New message from portfolio contact form" />
+          <label>
+            <span>Name</span>
+            <input type="text" name="name" required />
+          </label>
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" required />
+          </label>
+          <label>
+            <span>Message</span>
+            <textarea name="message" rows="5" required></textarea>
+          </label>
+          <button type="submit" class="btn">Send Message</button>
+          <p class="note">Your message will be sent to my email. I'll get back to you soon!</p>
+        </form>
+      </div>
+    </section>
+
+    <section id="hobbies" class="section">
+      <h2 class="section-title">Hobbies</h2>
+      <div class="hobbies-grid">
+        <div class="hobby-card">
+          <h3>🍳 Cooking</h3>
+          <p>I love experimenting with new recipes and creating delicious meals. Cooking is my creative outlet and a way to bring people together. It helps me relax and express my creativity through flavors.</p>
+        </div>
+        <div class="hobby-card">
+          <h3>🎵 Listen to Music</h3>
+          <p>Music is my constant companion while working, studying, or just relaxing. It helps me focus, boosts my mood, and inspires my creativity. Different genres help me get into different mindsets.</p>
+        </div>
+        <div class="hobby-card">
+          <h3>🌍 Learning Different Languages</h3>
+          <p>I enjoy learning new languages because it opens up new cultures and ways of thinking. It challenges my brain and helps me connect with people from different backgrounds. It's both intellectually stimulating and practically useful.</p>
+        </div>
+        <div class="hobby-card">
+          <h3>👥 Hanging Out with Friends</h3>
+          <p>Spending quality time with friends is essential for my well-being. Whether we're exploring new places, having deep conversations, or just laughing together, these moments create lasting memories and help me recharge.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Abiha Fatima — </p>
+  </footer>
+
+  <!-- AI Chatbot Widget -->
+  <div id="chatbot-widget" class="chatbot-widget">
+    <div id="chatbot-toggle" class="chatbot-toggle">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10h8c1.1 0 2-.9 2-2v-8c0-5.52-4.48-10-10-10zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+      </svg>
+    </div>
+    <div id="chatbot-container" class="chatbot-container">
+      <div class="chatbot-header">
+        <h3>AI Assistant</h3>
+        <button id="chatbot-close" class="chatbot-close">×</button>
+      </div>
+      <div id="chatbot-messages" class="chatbot-messages"></div>
+      <div class="chatbot-input-container">
+        <input type="text" id="chatbot-input" placeholder="Ask me anything about Abiha..." />
+        <button id="chatbot-send">Send</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Project Demo Modals -->
+  <div id="ml-scanner-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>ML Scanner Demo</h2>
+      <div class="demo-container">
+        <div class="camera-container">
+          <video id="ml-video" autoplay muted></video>
+          <canvas id="ml-canvas"></canvas>
+        </div>
+        <div class="ml-controls">
+          <button id="start-ml-camera">Start Camera</button>
+          <button id="stop-ml-camera">Stop Camera</button>
+          <button id="capture-ml-image">Capture & Analyze</button>
+        </div>
+        <div id="ml-results" class="ml-results"></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="fingerprint-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Fingerprint Scanner Demo</h2>
+      <div class="demo-container">
+        <div class="fingerprint-scanner">
+          <div class="scanner-surface">
+            <div class="fingerprint-pattern"></div>
+          </div>
+          <div class="scanner-info">
+            <p>Place your finger on the scanner</p>
+            <div class="scan-progress">
+              <div class="progress-bar"></div>
+            </div>
+          </div>
+        </div>
+        <div class="fingerprint-results">
+          <h3>Analysis Results</h3>
+          <div id="fingerprint-data"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="panda-form-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Panda Form Demo</h2>
+      <div class="demo-container">
+        <form class="panda-form">
+          <div class="form-group">
+            <label>Employee Name</label>
+            <input type="text" id="emp-name" required>
+          </div>
+          <div class="form-group">
+            <label>Department</label>
+            <select id="emp-dept" required>
+              <option value="">Select Department</option>
+              <option value="IT">IT</option>
+              <option value="HR">HR</option>
+              <option value="Finance">Finance</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Check In/Out</label>
+            <button type="button" id="check-in-btn">Check In</button>
+            <button type="button" id="check-out-btn">Check Out</button>
+          </div>
+          <div class="location-info">
+            <p>Location: <span id="current-location">Detecting...</span></p>
+            <button type="button" id="refresh-location" class="btn btn-outline" style="margin-top: 10px;">
+              🔄 Refresh Location
+            </button>
+          </div>
+        </form>
+        <div class="attendance-log">
+          <h3>Today's Attendance</h3>
+          <div id="attendance-list"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="student-system-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Student Management System Demo</h2>
+      <div class="demo-container">
+        <div class="student-dashboard">
+          <div class="dashboard-stats">
+            <div class="stat-card">
+              <h3>Total Students</h3>
+              <span class="stat-number">150</span>
+            </div>
+            <div class="stat-card">
+              <h3>Present Today</h3>
+              <span class="stat-number">142</span>
+            </div>
+            <div class="stat-card">
+              <h3>Absent Today</h3>
+              <span class="stat-number">8</span>
+            </div>
+          </div>
+          <div class="student-list">
+            <h3>Student List</h3>
+            <div id="student-table"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

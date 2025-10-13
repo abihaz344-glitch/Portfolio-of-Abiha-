@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f4c531;
+}
+
+.container {
+  height: 31.25em;
+  width: 31.25em;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+form {
+  width: 23.75em;
+  height: 18.75em;
+  background-color: #fff;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: calc(50% + 3.1em);
+  left: 50%;
+  padding: 3.1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 0.5em;
+}
+
+form label {
+  display: block;
+  margin-bottom: 0.2em;
+  font-weight: 600;
+  color: #2e0d30;
+}
+
+form input {
+  font-size: 0.95em;
+  font-weight: 400;
+  color: #3f3554;
+  padding: 0.3em;
+  border: none;
+  border-bottom: 0.12em solid #3f3554;
+  outline: none;
+}
+
+form input:focus {
+  border-color: #f4c531;
+}
+
+form button {
+  font-size: 0.95em;
+  padding: 0.8em 0;
+  border-radius: 2em;
+  border: none;
+  outline: none;
+  background-color: #f4c531;
+  color: #2e0d30;
+  margin-top: 1em;
+  cursor: pointer;
+}
+/* Panda Parts */
+.ear-l, .ear-r {
+  height: 5em;
+  width: 5em;
+  background-color: #3f3554;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+}
+
+.ear-l {
+  left: 4.37em;
+}
+
+.ear-r {
+  right: 4.37em;
+}
+
+.panda-face {
+  background-color: #fff;
+  height: 11.25em;
+  width: 14em;
+  border-radius: 50%;
+  position: absolute;
+  top: 1.87em;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: inset -0.3em -0.3em #efefef, inset 0.3em 0.3em #efefef;
+}
+
+.blush-l, .blush-r {
+  background-color: #f29c9f;
+  height: 1.25em;
+  width: 2.5em;
+  border-radius: 50%;
+  position: absolute;
+  top: 6.5em;
+}
+
+.blush-l {
+  left: 1em;
+}
+
+.blush-r {
+  right: 1em;
+}
+
+.eye-l, .eye-r {
+  background-color: #3f3554;
+  height: 3.12em;
+  width: 3.12em;
+  border-radius: 50%;
+  position: absolute;
+  top: 3.12em;
+}
+
+.eye-l {
+  left: 2.18em;
+}
+
+.eye-r {
+  right: 2.18em;
+}
+
+.eyeball-l, .eyeball-r {
+  background-color: #fff;
+  height: 1.37em;
+  width: 1.37em;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.eyeball-l {
+  top: 0.6em;
+  left: 0.6em;
+}
+
+.eyeball-r {
+  top: 0.6em;
+  right: 0.6em;
+}
+
+.nose {
+  background-color: #3f3554;
+  height: 1em;
+  width: 1em;
+  border-radius: 50%;
+  position: absolute;
+  top: 6em;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.mouth {
+  height: 1em;
+  width: 2em;
+  border-bottom: 0.2em solid #3f3554;
+  border-radius: 50%;
+  position: absolute;
+  top: 7em;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.hand-l, .hand-r {
+  background-color: #3f3554;
+  height: 2.81em;
+  width: 3.12em;
+  border-radius: 50%;
+  position: absolute;
+  top: 8.4em;
+}
+
+.hand-l {
+  left: 7.5em;
+}
+
+.hand-r {
+  right: 7.5em;
+}
+
+.paw-l, .paw-r {
+  background-color: #3f3554;
+  height: 3.12em;
+  width: 3.12em;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+}
+
+.paw-l {
+  left: 8.5em;
+}
+
+.paw-r {
+  right: 8.5em;
+}
